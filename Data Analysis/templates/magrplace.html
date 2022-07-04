@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style type="text/css">
+        body {
+            background-color: rgb(133, 128, 143);
+        }
+        table, th, td {
+          border:0.5px solid black;
+        }
+        </style>
+    <style type="text/css">
+        body {
+            background-color: rgb(133, 128, 143);
+        }
+        table, th, td {
+          border:0.5px solid black;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h1>3rd Question</h1>
+    <table style="width:100%">
+        <tr>
+            <th>time</th>
+            <th>latitude</th>
+            <th>longitude</th>
+            <th>mag</th>
+            <th>place</th>
+        </tr>
+        {% for i in p %}
+        <tr>
+            
+            <td>{{i[0]}}</td>
+            <td>{{i[1]}}</td>
+            <td>{{i[2]}}</td>
+            <td>{{i[3]}}</td>
+            <td>{{i[4]}}</td>
+        </tr>
+        {% endfor %}
+
+    </table>
+
+</body>
+</html>
